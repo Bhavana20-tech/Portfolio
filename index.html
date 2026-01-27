@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavana Peddaboina Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <div class="logo-container">
+        <img src="images/images/Bigname.png" alt="Bhavana Logo" class="logo">
+      </div>
+
+      <ul id="navLinks">
+        <li><a href="#header" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certificates</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+
+      <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+    </nav>
+
+    <div class="header-flex">
+      <div class="header-text">
+        <p>Welcome to My Portfolio Website</p>
+        <h1>Hello, I'm <span>Bhavana</span><br>Peddaboina</h1>
+      </div>
+
+      <div class="header-img">
+        <img src="images/images/bagroundmax.png" alt="Header Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="about-col-1">
+        <img src="images/images/bhavana.jpeg" alt="User Image">
+      </div>
+
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          Welcome to my personal portfolio! I’m passionate about creating interactive web experiences and building real-time projects.
+          I love exploring new technologies, solving problems, and turning ideas into reality.
+          Scroll down to see my skills, projects, and certifications.
+        </p>
+
+        <!-- ✅ Tab Titles -->
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+          <p class="tab-links" onclick="opentab('education', event)">Education</p>
+        </div>
+
+        <!-- ✅ Skills -->
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Technical Skills</span></li>
+            <li>Java</li>
+            <li>C (Basics)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+            <li><span>Database</span></li>
+            <li>SQL (MySQL)</li>
+          </ul>
+        </div>
+
+        <!-- ✅ Education -->
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Aditya Degree College</span></li>
+            <li>Bachelor of Computer Applications (BCA)</li>
+            <li>2022 – 2025</li>
+
+            <li><span>Sri Chaitanya Junior College</span></li>
+            <li>Intermediate (BiPC)</li>
+            <li>2020 – 2022</li>
+
+            <li><span>Bhashyam School</span></li>
+            <li>Secondary School (SSC)</li>
+            <li>2019 – 2020</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<div id="certifications">
+  <div class="container">
+    <h1 class="sub-title">My Certificates</h1>
+
+    <div class="certifications-list">
+      <div class="cert-box">
+        <i class="fa-solid fa-award cert-icon"></i>
+        <h2>Microsoft Power BI</h2>
+        <p>Digisaksham | Microsoft</p>
+        <a href="https://drive.google.com/file/d/139p_nsR4mG2MN6z27uwO0iCjNmsZGfF6/view?usp=drivesdk" target="_blank">View</a>
+      </div>
+
+      <div class="cert-box">
+        <i class="fa-solid fa-code cert-icon"></i>
+        <h2>Web Development with HTML</h2>
+        <p>Infosys | Springboard</p>
+        <a href="https://drive.google.com/file/d/1k8Gc0JZ26Kx_bSHZBK-Cix1helEoRzLK/view?usp=drivesdk" target="_blank">View</a>
+      </div>
+
+      <div class="cert-box">
+        <i class="fa-brands fa-aws cert-icon"></i>
+        <h2>AWS Cloud Practitioner</h2>
+        <p>Amazon Web Services</p>
+        <a href="https://drive.google.com/file/d/1bC9giP4DityM_Rg-wTHPqpAiI8UKxHoP/view?usp=drivesdk" target="_blank">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PROJECTS ===================== -->
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+
+    <div class="project-list">
+
+      <div class="project">
+        <img src="images/images/work-1.png" alt="Secure File Sharing">
+        <div class="layer">
+          <h3>Secure File Sharing</h3>
+          <p>Java & SQL based secure file sharing system.</p>
+          <a href="https://your-project-link-1.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/images/work-2.png" alt="Portfolio Website">
+        <div class="layer">
+          <h3>Portfolio Website</h3>
+          <p>Responsive website using HTML, CSS & JS.</p>
+          <a href="https://your-project-link-2.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/images/work-3.png" alt="Weather App">
+        <div class="layer">
+          <h3>Weather App</h3>
+          <p>Weather details of multiple cities.</p>
+          <a href="https://bhavana20-tech.github.io/live-weather/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="see-more">
+      <a href="#" class="btn1">See More</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="container contact-wrapper">
+
+    <div class="contact-info">
+      <h1>Contact Me</h1>
+      <p><i class="fas fa-envelope"></i> bhavanapeddaboina34@gmail.com</p>
+
+      <div class="contact-socials">
+        <a href="https://x.com/BPeddaboin50305"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/p_bhavana12" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/bhavana-peddaboina-123231308" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <a href="https://drive.google.com/uc?export=download&id=1xLuCELFCEZ42lIKgDcNm7cBvArSmgrUP" class="btn" download>
+        Download CV
+      </a>
+    </div>
+
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <p id="successMessage">Message sent successfully!</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <p>© 2025 Bhavana Peddaboina. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
